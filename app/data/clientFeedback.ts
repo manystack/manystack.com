@@ -1,6 +1,6 @@
 import {Feedback} from "@/app/types/types";
 
-export const clientFeedbacks: Feedback[] = [
+export const clientFeedback: Feedback[] = [
     {
         id: "21b5a023-d889-4bd5-92e3-00ab73f0a5bf",
         text: "Szabolcs didn’t have the experience I was looking for with this job, but I never regretted hiring him. He quickly understood what I was looking to accomplish and not only implemented it but also made great suggestions and improvements. I am only canceling the job because I am at a point where I need to revise the whole thing. I would hire Szabolcs again if we have more work like this.",
