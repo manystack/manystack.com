@@ -2,7 +2,9 @@ export type Feedback = {
     id: string;
     text: string;
     client: {
-        name: string;
+        name?: string;
+        title?: string;
+        company?: string;
         website?: string;
     };
     source: string;
