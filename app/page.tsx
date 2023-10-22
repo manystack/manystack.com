@@ -2,12 +2,12 @@ import {clientFeedback} from "@/app/data/clientFeedback";
 
 export default function Home() {
   return (
-    <div className="flex">
-      <main className="flex-1 flex h-screen flex-col items-center justify-center p-24 bg">
+    <div className="flex flex-wrap">
+      <main className="flex-1 flex lg:h-screen flex-col items-center justify-center p-24 bg">
         <h1 className="relative flex place-items-center text-4xl">manystack</h1>
         <p className="text-center text-gray-500">Web and Mobile Application development agency</p>
       </main>
-      <div className="flex flex-col gap-6 w-128 h-screen pt-4">
+      <div className="flex flex-col gap-6 w-full lg:w-128 lg:h-screen pt-4 pl-10">
         <h2 className="pt-4 text-xl text-gray-500">Our beloved Clients said:</h2>
         <ul className="overflow-y-scroll flex flex-col gap-10 pr-10 pb-10 rounded">
           {clientFeedback.reverse().map(({id, text, client: {name, title, company, website}}) => (
@@ -15,7 +15,7 @@ export default function Home() {
               <article>
                 <div className="flex gap-4">
                   <span className="-mt-2 text-8xl text-gray-400">”</span>
-                  <div className="mr-8">
+                  <div className="mr-8 overflow-hidden">
                     <blockquote className="text-gray-700">{text}</blockquote>
                     <div className="mt-10 text-gray-600" rel="author">
                       <div className="font-semibold">
@@ -23,7 +23,7 @@ export default function Home() {
                         {title && <> - <span>{title}</span></>}
                       </div>
                       {company && <span className="block">{company}</span>}
-                      {website && <a className="block underline truncate w-72" href={website} target="_blank">{website}</a>}
+                      {website && <a className="block underline truncate" href={website} target="_blank">{website}</a>}
                     </div>
                   </div>
                 </div>
