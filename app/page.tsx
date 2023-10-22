@@ -11,7 +11,7 @@ export default function Home() {
         <h2 className="px-4 text-lg">Client Feedback</h2>
         <ul className="overflow-y-scroll flex flex-col gap-4 pr-4 pb-4 rounded">
           {clientFeedback.reverse().map(({id, text, client: {name}}) => (
-            <li key={id} className="rounded p-4 bg-stone-700">
+            <li key={id} className="rounded p-4 bg-gray-200">
               <article>
                 <p>{text}</p>
                 <div className="mt-4 text-right" rel="author">- {name}</div>
