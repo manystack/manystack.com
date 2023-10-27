@@ -16,3 +16,10 @@ export type Feedback = {
         }
     };
 }
+
+export type Project = {
+    id: string;
+    title: string;
+    description: string;
+    website?: string;
+}
