@@ -16,9 +16,9 @@ export default function Home() {
           <ClientFeedbackListItem key={id} text={text} client={client}/>
         ))}
       </CardList>
-      <CardList title="Our exciting projects:">
-        {projects.reverse().map(({id, title, description}) => (
-          <ProjectListItem key={id} title={title} description={description}/>
+      <CardList title="Our exciting Projects:">
+        {projects.reverse().map(({id, title, description, thumbnail}) => (
+          <ProjectListItem key={id} title={title} description={description} thumbnail={thumbnail}/>
         ))}
       </CardList>
     </div>
