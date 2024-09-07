@@ -32,14 +32,14 @@ const Diobox = () => {
             We replaced the legacy Angular frontend with a robust React implementation. Leveraging the latest
             technologies, we ensured that the new frontend is not only faster and more responsive but also scalable and
             easier to maintain. The modernized interface now offers a seamless user experience that aligns with the high
-            standards of Diobox's brand.
+            standards of Diobox&apos;s brand.
           </p>
         </div>
 
         <div className="mb-6">
           <h3 className="text-xl font-semibold mb-2">2. Visual Email Builder</h3>
           <p className="text-lg">
-            To enhance Diobox's communication tools, we developed a Visual Email Builder. This feature allows users to
+            To enhance Diobox&apos;s communication tools, we developed a Visual Email Builder. This feature allows users to
             create professional-grade emails through a simple drag-and-drop interface, without the need for any coding
             knowledge. This tool empowers event organizers to design and send beautifully crafted emails, ensuring their
             communications are as polished as their events.
@@ -104,9 +104,9 @@ const Diobox = () => {
       <section>
         <h2 className="text-2xl font-semibold mb-4">The Result</h2>
         <p className="text-lg">
-          With Manystack’s expertise, Diobox has transformed into a state-of-the-art event management platform that
+          With Manystack&apos;s expertise, Diobox has transformed into a state-of-the-art event management platform that
           stands out in a competitive market. The new features have not only improved the user experience but also
-          significantly increased Diobox's operational efficiency and client satisfaction. The successful collaboration
+          significantly increased Diobox&apos;s operational efficiency and client satisfaction. The successful collaboration
           between Diobox and Manystack is a testament to our commitment to quality, innovation, and delivering solutions
           that exceed expectations.
         </p>
