@@ -23,4 +23,5 @@ export type Project = {
     description: string;
     website?: string;
     thumbnail?: string;
+    slug?: string;
 }

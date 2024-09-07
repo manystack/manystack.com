@@ -15,12 +15,12 @@ export default function Home() {
       </main>
       <CardList title="Our beloved Clients said:">
         {clientFeedback.reverse().map(({id, text, client}) => (
-          <ClientFeedbackListItem key={id} text={text} client={client}/>
+          <ClientFeedbackListItem key={id} text={text} client={client} />
         ))}
       </CardList>
       <CardList title="Our exciting Projects:">
-        {projects.reverse().map(({id, title, description, thumbnail}) => (
-          <ProjectListItem key={id} title={title} description={description} thumbnail={thumbnail}/>
+        {projects.reverse().map(({id, title, description, thumbnail, slug}) => (
+          <ProjectListItem key={id} title={title} description={description} thumbnail={thumbnail} slug={slug} />
         ))}
       </CardList>
     </div>
