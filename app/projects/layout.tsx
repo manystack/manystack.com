@@ -1,4 +1,10 @@
-const Layout = ({ children }) => {
+import { ReactNode } from 'react'
+
+type Props = {
+  children: ReactNode
+}
+
+const Layout = ({ children }: Props) => {
   return (
     <>
       <div className="bg-gray-100 p-4 text-center">
