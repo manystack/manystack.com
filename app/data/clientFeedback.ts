@@ -17,7 +17,8 @@ export const clientFeedback: Feedback[] = [
         from: 2017,
         to: 2018
       }
-    }
+    },
+    order: 12,
   },
   {
     id: "a1b5a023-d889-4bd5-92e3-00ab73f0a5bf",
@@ -34,7 +35,8 @@ export const clientFeedback: Feedback[] = [
         from: 2017,
         to: 2018
       }
-    }
+    },
+    order: 11,
   },
   {
     id: "b1b5a023-d889-4bd5-92e3-00ab73f0a5bf",
@@ -51,7 +53,8 @@ export const clientFeedback: Feedback[] = [
         from: 2018,
         to: 2018
       }
-    }
+    },
+    order: 10,
   },
   {
     id: "c1b5a023-d889-4bd5-92e3-00ab73f0a5bf",
@@ -69,7 +72,8 @@ export const clientFeedback: Feedback[] = [
         from: 2018,
         to: 2021
       }
-    }
+    },
+    order: 9,
   },
   {
     id: "d1b5a023-d889-4bd5-92e3-00ab73f0a5bf",
@@ -86,7 +90,8 @@ export const clientFeedback: Feedback[] = [
         from: 2019,
         to: 2019
       }
-    }
+    },
+    order: 8,
   },
   {
     id: "f1b5a023-d889-4bd5-92e3-00ab73f0a5bf",
@@ -103,7 +108,8 @@ export const clientFeedback: Feedback[] = [
         from: 2019,
         to: 2019
       }
-    }
+    },
+    order: 7,
   },
   {
     id: "g1b5a023-d889-4bd5-92e3-00ab73f0a5bf",
@@ -120,7 +126,8 @@ export const clientFeedback: Feedback[] = [
         from: 2018,
         to: 2020,
       }
-    }
+    },
+    order: 6,
   },
   {
     id: "h1b5a023-d889-4bd5-92e3-00ab73f0a5bf",
@@ -137,7 +144,8 @@ export const clientFeedback: Feedback[] = [
         from: 2018,
         to: 2020,
       }
-    }
+    },
+    order: 5,
   },
   {
     id: "i1b5a023-d889-4bd5-92e3-00ab73f0a5bf",
@@ -155,7 +163,8 @@ export const clientFeedback: Feedback[] = [
         from: 2020,
         to: 2020,
       },
-    }
+    },
+    order: 4,
   },
   {
     id: "h1b5a023-d889-4bd5-92e3-00ab73f0a5bf",
@@ -173,7 +182,8 @@ export const clientFeedback: Feedback[] = [
         from: 2019,
         to: 2021,
       }
-    }
+    },
+    order: 3,
   },
   {
     id: "j1b5a023-d889-4bd5-92e3-00ab73f0a5bf",
@@ -191,7 +201,8 @@ export const clientFeedback: Feedback[] = [
         from: 2019,
         to: 2021,
       }
-    }
+    },
+    order: 2,
   },
   {
     id: "k1b5a023-d889-4bd5-92e3-00ab73f0a5bf",
@@ -209,6 +220,7 @@ export const clientFeedback: Feedback[] = [
         from: 2019,
         to: 2021,
       }
-    }
+    },
+    order: 1,
   },
 ]

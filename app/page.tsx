@@ -1,8 +1,9 @@
-import {clientFeedback} from "@/app/data/clientFeedback";
 import ClientFeedbackListItem from "@/app/components/ClientFeedbackListItem";
 import CardList from "@/app/components/CardList";
 import ProjectListItem from "@/app/components/ProjectListItem";
 import {projects} from "@/app/data/projects";
+import {clientFeedback} from "@/app/data/clientFeedback";
+import {orderBy} from "lodash";
 
 export default function Home() {
   return (
@@ -14,12 +15,12 @@ export default function Home() {
         <p className="text-center text-gray-500">With ❤️.</p>
       </main>
       <CardList title="Our beloved Clients said:">
-        {clientFeedback.reverse().map(({id, text, client}) => (
+        {orderBy(clientFeedback, "order").map(({id, text, client}) => (
           <ClientFeedbackListItem key={id} text={text} client={client} />
         ))}
       </CardList>
       <CardList title="Our exciting Projects:">
-        {projects.reverse().map(({id, title, description, thumbnail, slug}) => (
+        {orderBy(projects, "order").map(({id, title, description, thumbnail, slug}) => (
           <ProjectListItem key={id} title={title} description={description} thumbnail={thumbnail} slug={slug} />
         ))}
       </CardList>
