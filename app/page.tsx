@@ -10,9 +10,11 @@ export default function Home() {
     <div className="flex flex-wrap">
       <main className="flex-1 flex lg:h-screen flex-col items-center justify-center p-24 bg">
         <h1 className="relative flex place-items-center text-4xl">manystack</h1>
-        <p className="text-center text-gray-500">Web and Mobile Application development team</p>
-        <p className="text-center text-gray-500 mt-4">Our Dream is to build Your Dream.</p>
-        <p className="text-center text-gray-500">With ❤️.</p>
+        <div className="text-center text-gray-500">
+          <p>Web and Mobile Application development team</p>
+          <p className="mt-4">Our Dream is to build Your Dream.</p>
+          <p>With ❤️.</p>
+        </div>
       </main>
       <CardList title="Our beloved Clients said:">
         {orderBy(clientFeedback, "order").map(({id, text, client}) => (

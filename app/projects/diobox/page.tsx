@@ -1,33 +1,29 @@
 const Diobox = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6">Diobox: Transforming Event Management with Modern Web Development</h1>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Client Overview</h2>
-        <p className="text-lg mb-4">
+    <div className="container flex flex-col gap-8 text-gray-700">
+      <h1 className="text-3xl">Diobox: Transforming Event Management with Modern Web Development</h1>
+      <section className="flex flex-col gap-8">
+        <h2 className="text-2xl">Client Overview</h2>
+        <p className="text-lg">
           Diobox is a leading platform in the event management industry, offering a comprehensive suite of tools for
           organizing, managing, and executing events of all sizes. With a focus on delivering top-tier services to event
           planners and hosts, Diobox required a complete overhaul of their legacy frontend and the addition of new,
           innovative features to meet the growing demands of their clients.
         </p>
       </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Project Scope</h2>
-        <p className="text-lg mb-4">
+      <section className="flex flex-col gap-8">
+        <h2 className="text-2xl">Project Scope</h2>
+        <p className="text-lg">
           Manystack was engaged by Diobox to modernize their web application, starting with replacing their outdated
           Angular frontend with a sleek, efficient React implementation. The goal was not just to refresh the user
           interface, but to enhance functionality, user experience, and overall performance—ensuring Diobox remains at
           the forefront of event management technology.
         </p>
       </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Our Contributions</h2>
-
-        <div className="mb-6">
-          <h3 className="text-xl font-semibold mb-2">1. Modern Frontend Overhaul</h3>
+      <section className="flex flex-col gap-8">
+        <h2 className="text-2xl">Our Contributions</h2>
+        <div>
+          <h3 className="text-xl">1. Modern Frontend Overhaul</h3>
           <p className="text-lg">
             We replaced the legacy Angular frontend with a robust React implementation. Leveraging the latest
             technologies, we ensured that the new frontend is not only faster and more responsive but also scalable and
@@ -35,9 +31,8 @@ const Diobox = () => {
             standards of Diobox&apos;s brand.
           </p>
         </div>
-
-        <div className="mb-6">
-          <h3 className="text-xl font-semibold mb-2">2. Visual Email Builder</h3>
+        <div>
+          <h3 className="text-xl">2. Visual Email Builder</h3>
           <p className="text-lg">
             To enhance Diobox&apos;s communication tools, we developed a Visual Email Builder. This feature allows users to
             create professional-grade emails through a simple drag-and-drop interface, without the need for any coding
@@ -45,9 +40,8 @@ const Diobox = () => {
             communications are as polished as their events.
           </p>
         </div>
-
-        <div className="mb-6">
-          <h3 className="text-xl font-semibold mb-2">3. Drag-and-Drop Guest Seating</h3>
+        <div>
+          <h3 className="text-xl">3. Drag-and-Drop Guest Seating</h3>
           <p className="text-lg">
             We introduced a drag-and-drop interface for managing guest tables and seating arrangements. This feature
             provides event planners with an intuitive way to organize seating, making the complex task of event setup
@@ -55,9 +49,8 @@ const Diobox = () => {
             of the event is meticulously planned.
           </p>
         </div>
-
-        <div className="mb-6">
-          <h3 className="text-xl font-semibold mb-2">4. Customizable Form Builder</h3>
+        <div>
+          <h3 className="text-xl">4. Customizable Form Builder</h3>
           <p className="text-lg">
             We developed a highly customizable form builder for RSVP, Registration, and Survey forms. This tool allows
             users to create forms tailored to their specific needs, whether it’s collecting RSVPs, gathering guest
@@ -65,9 +58,8 @@ const Diobox = () => {
             embedded directly into websites, providing maximum flexibility for event organizers.
           </p>
         </div>
-
-        <div className="mb-6">
-          <h3 className="text-xl font-semibold mb-2">5. Guest Check-In and Ticketing</h3>
+        <div>
+          <h3 className="text-xl">5. Guest Check-In and Ticketing</h3>
           <p className="text-lg">
             To streamline event day operations, we implemented a guest check-in functionality and an integrated
             ticketing system. These features ensure a smooth and professional experience for both event hosts and
@@ -76,9 +68,8 @@ const Diobox = () => {
           </p>
         </div>
       </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Technologies Used</h2>
+      <section className="flex flex-col gap-8">
+        <h2 className="text-2xl">Technologies Used</h2>
         <ul className="list-disc pl-5 text-lg">
           <li><strong>Netlify</strong> for continuous deployment and hosting, ensuring a seamless, reliable experience
             for Diobox users.
@@ -100,9 +91,8 @@ const Diobox = () => {
           </li>
         </ul>
       </section>
-
-      <section>
-        <h2 className="text-2xl font-semibold mb-4">The Result</h2>
+      <section className="flex flex-col gap-8">
+        <h2 className="text-2xl ">The Result</h2>
         <p className="text-lg">
           With Manystack&apos;s expertise, Diobox has transformed into a state-of-the-art event management platform that
           stands out in a competitive market. The new features have not only improved the user experience but also
