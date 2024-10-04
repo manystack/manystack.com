@@ -1,3 +1,6 @@
+import Image from "next/image";
+import ProjectIllustration from "@/app/components/ProjectIllustration";
+
 const Diobox = () => {
   return (
     <div className="container flex flex-col gap-8 text-gray-700">
@@ -33,6 +36,7 @@ const Diobox = () => {
         </div>
         <div>
           <h3 className="text-xl">2. Visual Email Builder</h3>
+          <ProjectIllustration src="/illustrations/diobox/email-builder.gif" title="Visual Email Builder" />
           <p className="text-lg">
             To enhance Diobox&apos;s communication tools, we developed a Visual Email Builder. This feature allows users to
             create professional-grade emails through a simple drag-and-drop interface, without the need for any coding
@@ -42,6 +46,7 @@ const Diobox = () => {
         </div>
         <div>
           <h3 className="text-xl">3. Drag-and-Drop Guest Seating</h3>
+          <ProjectIllustration src="/illustrations/diobox/seating.gif" title="Drag-and-Drop Guest Seating" />
           <p className="text-lg">
             We introduced a drag-and-drop interface for managing guest tables and seating arrangements. This feature
             provides event planners with an intuitive way to organize seating, making the complex task of event setup
@@ -51,6 +56,7 @@ const Diobox = () => {
         </div>
         <div>
           <h3 className="text-xl">4. Customizable Form Builder</h3>
+          <ProjectIllustration src="/illustrations/diobox/form-builder.gif" title="Customizable Form Builder" />
           <p className="text-lg">
             We developed a highly customizable form builder for RSVP, Registration, and Survey forms. This tool allows
             users to create forms tailored to their specific needs, whether it’s collecting RSVPs, gathering guest
@@ -60,6 +66,7 @@ const Diobox = () => {
         </div>
         <div>
           <h3 className="text-xl">5. Guest Check-In and Ticketing</h3>
+          <ProjectIllustration src="/illustrations/diobox/guest-check-in-ticketing.gif" title="Guest Check-In and Ticketing" />
           <p className="text-lg">
             To streamline event day operations, we implemented a guest check-in functionality and an integrated
             ticketing system. These features ensure a smooth and professional experience for both event hosts and
