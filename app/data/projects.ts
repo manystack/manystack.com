@@ -32,6 +32,7 @@ export const projects: Project[] = [
     description: "Recruiterly is a platform that connects recruiters with companies. It is a marketplace where companies can find recruiters to help them find the best candidates for their open positions. Recruiters can also find companies to work with.",
     website: "https://www.linkedin.com/company/recruiterly/about/",
     thumbnail: "recruiterly.png",
+    slug: "recruiterly",
     order: 1,
   }
 ]
