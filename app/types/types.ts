@@ -15,4 +15,15 @@ export type Feedback = {
             to: number;
         }
     };
+    order: number;
+}
+
+export type Project = {
+    id: string;
+    title: string;
+    description: string;
+    order: number;
+    website?: string;
+    thumbnail?: string;
+    slug?: string;
 }
