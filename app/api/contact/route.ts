@@ -11,14 +11,16 @@ const sesClient = new SESClient({
 
 export async function POST(req: Request) {
   try {
-    const { from, message } = await req.json();
+    const { email, message } = await req.json();
 
-    if (!from || !message) {
+    if (!email || !message) {
       return NextResponse.json(
         { error: "Missing required fields." },
         { status: 400 }
       );
     }
+
+    const messageBody = `Email: ${email}\n\nMessage: ${message}`;
 
     const params = {
       Source: process.env.EMAIL_FROM!,
@@ -30,7 +32,7 @@ export async function POST(req: Request) {
           Data: "Inquiry from manystack.com",
         },
         Body: {
-          Text: message ? { Data: message } : undefined,
+          Text: { Data: messageBody },
         },
       },
     };
