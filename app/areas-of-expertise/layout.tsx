@@ -5,6 +5,6 @@ type Props = {
   children: ReactNode
 }
 
-const Layout = ({ children }: Props) => <PagesLayout title="projects">{children}</PagesLayout>
+const Layout = ({ children }: Props) => <PagesLayout title="areas of expertise">{children}</PagesLayout>
 
 export default Layout
