@@ -1,5 +1,5 @@
 import {Feedback} from "@/app/types/types"
-import CardListItem from "@/app/components/CardListItem";
+import CardListItem from "@/app/components/CardListItem"
 
 type Props = Pick<Feedback, "text" | "client">
 

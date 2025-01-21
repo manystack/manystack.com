@@ -1,10 +1,10 @@
-import ClientFeedbackListItem from "@/app/components/ClientFeedbackListItem";
-import CardList from "@/app/components/CardList";
-import ProjectListItem from "@/app/components/ProjectListItem";
-import {projects} from "@/app/data/projects";
-import {clientFeedback} from "@/app/data/clientFeedback";
-import {orderBy} from "lodash";
-import ContactDialog from "@/app/components/ContactDialog";
+import ClientFeedbackListItem from "@/app/components/ClientFeedbackListItem"
+import CardList from "@/app/components/CardList"
+import ProjectListItem from "@/app/components/ProjectListItem"
+import {projects} from "@/app/data/projects"
+import {clientFeedback} from "@/app/data/clientFeedback"
+import {orderBy} from "lodash"
+import ContactDialog from "@/app/components/ContactDialog"
 
 export default function Home() {
   return (

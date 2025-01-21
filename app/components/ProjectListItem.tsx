@@ -1,6 +1,6 @@
 import {Project} from "@/app/types/types"
 import CardListItem from "./CardListItem"
-import Image from "next/image";
+import Image from "next/image"
 
 type Props = Pick<Project, "title" | "description" | "thumbnail" | "slug">
 

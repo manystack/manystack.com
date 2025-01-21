@@ -23,7 +23,7 @@ import {Input} from "@/components/ui/input"
 import {Textarea} from "@/components/ui/textarea"
 import {Loader2} from "lucide-react"
 import React, {useState} from "react"
-import {RainbowButton} from "@/components/ui/rainbow-button";
+import {RainbowButton} from "@/components/ui/rainbow-button"
 import {
   AlertDialog,
   AlertDialogAction,
@@ -34,7 +34,7 @@ import {
   AlertDialogTitle,
 
 } from "@/components/ui/alert-dialog"
-import confetti from "canvas-confetti";
+import confetti from "canvas-confetti"
 
 const postContactForm = async (values: z.infer<typeof formSchema>) => {
   const response = await fetch("/api/contact", {
@@ -137,15 +137,15 @@ const ContactDialog = () => {
         </AlertDialogContent>
       </AlertDialog>
     </>
-  );
+  )
 }
 
 const triggerConfetti = () => {
-  const end = Date.now() + 3 * 1000; // 3 seconds
-  const colors = ["#a786ff", "#fd8bbc", "#eca184", "#f8deb1"];
+  const end = Date.now() + 3 * 1000 // 3 seconds
+  const colors = ["#a786ff", "#fd8bbc", "#eca184", "#f8deb1"]
 
   const frame = () => {
-    if (Date.now() > end) return;
+    if (Date.now() > end) return
 
     confetti({
       particleCount: 2,
@@ -154,7 +154,7 @@ const triggerConfetti = () => {
       startVelocity: 60,
       origin: { x: 0, y: 0.5 },
       colors: colors,
-    });
+    })
     confetti({
       particleCount: 2,
       angle: 120,
@@ -162,12 +162,12 @@ const triggerConfetti = () => {
       startVelocity: 60,
       origin: { x: 1, y: 0.5 },
       colors: colors,
-    });
+    })
 
-    requestAnimationFrame(frame);
-  };
+    requestAnimationFrame(frame)
+  }
 
-  frame();
-};
+  frame()
+}
 
 export default ContactDialog
