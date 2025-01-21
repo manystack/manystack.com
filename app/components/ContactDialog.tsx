@@ -126,9 +126,11 @@ const ContactDialog = () => {
         <AlertDialogContent>
           <AlertDialogHeader>
             <AlertDialogTitle>Thank You!</AlertDialogTitle>
-            <AlertDialogDescription>
-              <p className="mb-2">Thanks for reaching out! We’ll respond within 24 hours.</p>
-              <p>We’re excited to help bring your dream to life.</p>
+            <AlertDialogDescription asChild>
+              <div className="flex flex-col gap-2">
+                <p>Thanks for reaching out! We’ll respond within 24 hours.</p>
+                <p>We’re excited to help bring your dream to life.</p>
+              </div>
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
