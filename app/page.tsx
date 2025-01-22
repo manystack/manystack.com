@@ -8,8 +8,8 @@ import ContactDialog from "@/app/components/ContactDialog"
 
 export default function Home() {
   return (
-    <div className="flex flex-wrap">
-      <main className="flex-1 flex lg:h-screen flex-col items-center justify-center px-12 py-48 lg:p-24 bg">
+    <div className="flex flex-col xl:flex-row">
+      <main className="xl:flex-1 flex h-screen -my-32 xl:-my-0 flex-col items-center justify-center px-12 lg:p-24 bg">
         <h1 className="relative flex place-items-center text-5xl">manystack</h1>
         <div className="text-center text-gray-500 flex flex-col items-center gap-8">
           <p>Web and Mobile Applications for Success</p>
@@ -20,7 +20,7 @@ export default function Home() {
           <ContactDialog />
         </div>
       </main>
-      <div className="w-96 flex-1 flex flex-wrap items-center justify-center">
+      <div className="flex flex-col xl:flex-row items-center justify-center">
         <CardList title="Our beloved Clients said:">
           {orderBy(clientFeedback, "order").map(({id, text, client}) => (
             <ClientFeedbackListItem key={id} text={text} client={client} />
