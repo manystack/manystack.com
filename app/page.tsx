@@ -20,16 +20,18 @@ export default function Home() {
           <ContactDialog />
         </div>
       </main>
-      <CardList title="Our beloved Clients said:">
-        {orderBy(clientFeedback, "order").map(({id, text, client}) => (
-          <ClientFeedbackListItem key={id} text={text} client={client} />
-        ))}
-      </CardList>
-      <CardList title="Our exciting Projects:">
-        {orderBy(projects, "order").map(({id, title, description, thumbnail, slug}) => (
-          <ProjectListItem key={id} title={title} description={description} thumbnail={thumbnail} slug={slug} />
-        ))}
-      </CardList>
+      <div className="w-96 flex-1 flex flex-wrap items-center justify-center">
+        <CardList title="Our beloved Clients said:">
+          {orderBy(clientFeedback, "order").map(({id, text, client}) => (
+            <ClientFeedbackListItem key={id} text={text} client={client} />
+          ))}
+        </CardList>
+        <CardList title="Our exciting Projects:">
+          {orderBy(projects, "order").map(({id, title, description, thumbnail, slug}) => (
+            <ProjectListItem key={id} title={title} description={description} thumbnail={thumbnail} slug={slug} />
+          ))}
+        </CardList>
+      </div>
     </div>
   )
 }
