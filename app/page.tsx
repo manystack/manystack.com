@@ -10,9 +10,9 @@ export default function Home() {
   return (
     <div className="flex flex-wrap">
       <main className="flex-1 flex lg:h-screen flex-col items-center justify-center px-12 py-48 lg:p-24 bg">
-        <h1 className="relative flex place-items-center text-4xl">manystack</h1>
+        <h1 className="relative flex place-items-center text-5xl">manystack</h1>
         <div className="text-center text-gray-500 flex flex-col items-center gap-8">
-          <p>Web and Mobile Application development team</p>
+          <p>Web and Mobile Applications for Success</p>
           <p>
             Our Dream is to build Your Dream.<br />
             With ❤️.
