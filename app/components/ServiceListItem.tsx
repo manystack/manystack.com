@@ -4,21 +4,21 @@ import Image from "next/image"
 
 type Props = Pick<Project, "title" | "description" | "thumbnail" | "slug">
 
-const ProjectListItem = ({title, description, thumbnail, slug}: Props) => {
+const ServiceListItem = ({title, description, thumbnail, slug}: Props) => {
   if (slug) {
     return (
-      <a href={"/projects/" + slug}>
-        <ProjectListItemContent title={title} description={description} thumbnail={thumbnail} />
+      <a href={"/areas-of-expertise/" + slug}>
+        <ServiceListItemContent title={title} description={description} thumbnail={thumbnail} />
       </a>
     )
   }
 
-  return <ProjectListItemContent title={title} description={description} thumbnail={thumbnail} />
+  return <ServiceListItemContent title={title} description={description} thumbnail={thumbnail} />
 }
 
-type ProjectListItemContentProps = Pick<Project, "title" | "description" | "thumbnail">
+type ServiceListItemContentProps = Pick<Project, "title" | "description" | "thumbnail">
 
-const ProjectListItemContent = ({title, description, thumbnail}: ProjectListItemContentProps) => {
+const ServiceListItemContent = ({title, description, thumbnail}: ServiceListItemContentProps) => {
   return (
     <CardListItem>
       <div className="flex flex-col gap-8 mx-8">
@@ -30,4 +30,4 @@ const ProjectListItemContent = ({title, description, thumbnail}: ProjectListItem
   )
 }
 
-export default ProjectListItem
+export default ServiceListItem

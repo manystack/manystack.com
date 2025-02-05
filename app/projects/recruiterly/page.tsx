@@ -1,5 +1,4 @@
-import Image from "next/image";
-import ProjectIllustration from "@/app/components/ProjectIllustration";
+import ProjectIllustration from "@/app/components/ProjectIllustration"
 
 const Diobox = () => {
   return (

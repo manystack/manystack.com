@@ -4,7 +4,7 @@ export const projects: Project[] = [
   {
     id: "11b5a023-d889-4bd5-92e3-00ab73f0a5bf",
     title: "Diobox",
-    description: "Diobox is a platform that helps event organizers to manage their events. It is a platform that helps event organizers to manage their events. It is a platform that helps event organizers to manage their events.",
+    description: "Diobox is a platform that helps event organizers to manage their events. It is a platform that helps event organizers to manage their events.",
     website: "https://home.d.io",
     thumbnail: "diobox.png",
     slug: "diobox",
@@ -19,7 +19,7 @@ export const projects: Project[] = [
     order: 3,
   },
   {
-    id: "21b5a023-d889-4bd5-92e3-00ab73f0a5bf",
+    id: "9566ac16-c0f1-4238-a382-3531754112e4",
     title: "Influencers.ae",
     description: "Influencers.ae is a platform that connects influencers with brands. It is a marketplace where brands can find influencers to promote their products and services. Influencers can also find brands to work with.",
     website: "https://influencers.ae",

@@ -1,12 +1,13 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import ContactDialogProvider from './components/ContactDialogProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'manystack',
-  description: 'Web and Mobile Application development agency',
+  title: 'manystack - Our Dream is to build Your Dream.',
+  description: 'Web and Mobile Applications for Success',
 }
 
 export default function RootLayout({
@@ -16,7 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <ContactDialogProvider>
+          {children}
+        </ContactDialogProvider>
+      </body>
     </html>
   )
 }

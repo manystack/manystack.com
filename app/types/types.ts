@@ -27,3 +27,12 @@ export type Project = {
     thumbnail?: string;
     slug?: string;
 }
+
+export type Service = {
+    id: string;
+    title: string;
+    description: string;
+    order: number;
+    thumbnail?: string;
+    slug?: string;
+}

@@ -1,12 +1,12 @@
 "use client"
 
+import React, {ReactNode, useState, createContext} from "react"
 import {
   Dialog,
   DialogContent,
   DialogDescription,
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
 } from "@/components/ui/dialog"
 import {zodResolver} from "@hookform/resolvers/zod"
 import {useForm} from "react-hook-form"
@@ -22,8 +22,6 @@ import {
 import {Input} from "@/components/ui/input"
 import {Textarea} from "@/components/ui/textarea"
 import {Loader2} from "lucide-react"
-import React, {useState} from "react"
-import {RainbowButton} from "@/components/ui/rainbow-button";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -34,7 +32,11 @@ import {
   AlertDialogTitle,
 
 } from "@/components/ui/alert-dialog"
-import confetti from "canvas-confetti";
+import confetti from "canvas-confetti"
+
+export const ContactDialogContext = createContext({
+  openContactDialog: () => {},
+})
 
 const postContactForm = async (values: z.infer<typeof formSchema>) => {
   const response = await fetch("/api/contact", {
@@ -55,7 +57,11 @@ const formSchema = z.object({
   message: z.string().min(10, {message: "Please summarize your project in a couple of sentences."}),
 })
 
-const ContactDialog = () => {
+type Props = {
+  children: ReactNode
+}
+
+const ContactDialogProvider = ({children}: Props) => {
   const [showForm, setShowForm] = useState(false)
   const [submitted, setSubmitted] = useState(false)
 
@@ -80,12 +86,12 @@ const ContactDialog = () => {
     form.reset()
   }
 
+  const openContactDialog = () => setShowForm(true)
+
   return (
-    <>
+    <ContactDialogContext.Provider value={{openContactDialog}}>
+      {children}
       <Dialog open={showForm} onOpenChange={handleOpenChange}>
-        <DialogTrigger asChild>
-          <RainbowButton>Let&apos;s Build It</RainbowButton>
-        </DialogTrigger>
         <DialogContent>
           <DialogHeader>
             <DialogTitle>What&apos;s Your Dream Project?</DialogTitle>
@@ -126,9 +132,11 @@ const ContactDialog = () => {
         <AlertDialogContent>
           <AlertDialogHeader>
             <AlertDialogTitle>Thank You!</AlertDialogTitle>
-            <AlertDialogDescription>
-              <p className="mb-2">Thanks for reaching out! We’ll respond within 24 hours.</p>
-              <p>We’re excited to help bring your dream to life.</p>
+            <AlertDialogDescription asChild>
+              <div className="flex flex-col gap-2">
+                <p>Thanks for reaching out! We’ll respond within 24 hours.</p>
+                <p>We’re excited to help bring your dream to life.</p>
+              </div>
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
@@ -136,16 +144,16 @@ const ContactDialog = () => {
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
-    </>
-  );
+    </ContactDialogContext.Provider>
+  )
 }
 
 const triggerConfetti = () => {
-  const end = Date.now() + 3 * 1000; // 3 seconds
-  const colors = ["#a786ff", "#fd8bbc", "#eca184", "#f8deb1"];
+  const end = Date.now() + 3 * 1000 // 3 seconds
+  const colors = ["#a786ff", "#fd8bbc", "#eca184", "#f8deb1"]
 
   const frame = () => {
-    if (Date.now() > end) return;
+    if (Date.now() > end) return
 
     confetti({
       particleCount: 2,
@@ -154,7 +162,7 @@ const triggerConfetti = () => {
       startVelocity: 60,
       origin: { x: 0, y: 0.5 },
       colors: colors,
-    });
+    })
     confetti({
       particleCount: 2,
       angle: 120,
@@ -162,12 +170,12 @@ const triggerConfetti = () => {
       startVelocity: 60,
       origin: { x: 1, y: 0.5 },
       colors: colors,
-    });
+    })
 
-    requestAnimationFrame(frame);
-  };
+    requestAnimationFrame(frame)
+  }
 
-  frame();
-};
+  frame()
+}
 
-export default ContactDialog
+export default ContactDialogProvider

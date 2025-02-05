@@ -1,4 +1,4 @@
-import {Feedback} from "@/app/types/types";
+import {Feedback} from "@/app/types/types"
 
 export const clientFeedback: Feedback[] = [
   {
@@ -167,7 +167,7 @@ export const clientFeedback: Feedback[] = [
     order: 4,
   },
   {
-    id: "h1b5a023-d889-4bd5-92e3-00ab73f0a5bf",
+    id: "520253ae-f275-48df-9b4c-ddf6e4eb249e",
     text: "As always. Excellent. I think of Marko as my right hand man, not just for his work but also his thought process, and willingness to not just follow - but come up with ideas and solutions.",
     client: {
       name: "Matthew Gibbs",
