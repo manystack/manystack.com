@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'manystack - Our Dream is to build Your Dream.',
-  description: 'Web and Mobile Applications for Success',
+  description: 'Manystack specializes in custom web and mobile app development, delivering scalable, elegant, and maintainable software solutions tailored to your business needs.',
 }
 
 export default function RootLayout({
