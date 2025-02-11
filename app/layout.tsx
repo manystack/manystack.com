@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import ContactDialogProvider from './components/ContactDialogProvider'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,7 @@ export default function RootLayout({
           {children}
         </ContactDialogProvider>
       </body>
+      <GoogleAnalytics gaId="G-4C57M55LN8" />
     </html>
   )
 }
